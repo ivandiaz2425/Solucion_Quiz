@@ -22,12 +22,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@android:color/white">
+                android:background="@drawable/bordetr_radious"
+                android:layout_marginTop="10dp">
 
                 <RelativeLayout
                     android:id="@+id/rl_1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordetr_radious">
 
                     <ImageView
                         android:id="@+id/img_1"
@@ -61,7 +63,8 @@
                     android:id="@+id/rl_2"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
-                    android:layout_below="@id/rl_1">
+                    android:layout_below="@id/rl_1"
+                    android:background="@drawable/bordetr_radious">
 
                     <ImageView
                         android:id="@+id/img_2"
@@ -69,12 +72,13 @@
                         android:layout_height="140dp"
                         android:src="@drawable/paseo_otonal_57e9590ae3cc9"
                         android:scaleType="centerCrop"/>
-
+                    
                     <RelativeLayout
                         android:id="@+id/rl_3"
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:layout_toRightOf="@id/img_2">
+                        android:layout_toRightOf="@id/img_2"
+                        >
 
                         <TextView
                             android:id="@+id/txt_3"
@@ -94,12 +98,84 @@
                             android:textStyle="bold"
                             android:layout_below="@id/txt_3"
                             android:layout_alignLeft="@id/txt_3"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="10dp"                           
                             />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/bordetr_radious">
+                            
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/img_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_me_gusta_48"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_4"
+                                    android:layout_toRightOf="@id/img_3"
+                                    android:layout_centerVertical="true"/>
+
+                                
+                                
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/img_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_me_gusta_48"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_4"
+                                    android:layout_toRightOf="@id/img_4"
+                                    android:layout_centerVertical="true"/>
 
 
 
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/img_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_me_gusta_48"/>
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_4"
+                                    android:layout_toRightOf="@id/img_5"
+                                    android:layout_centerVertical="true"/>
+
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                        
+                        
+                        
+                        
                     </RelativeLayout>
 
 
