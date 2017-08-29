@@ -1,17 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pantalla_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aula_7.solucion_quiz.Pantalla_1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icons8_usuario_96"/>
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_1"
+                        android:layout_toRightOf="@id/img_1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/txt_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/txt_1"
+                        android:layout_alignLeft="@id/txt_1"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/rl_1">
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/paseo_otonal_57e9590ae3cc9"
+                        android:scaleType="centerCrop"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_toRightOf="@id/img_2">
+
+                        <TextView
+                            android:id="@+id/txt_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_3"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentTop="true"
+                            />
+                        <TextView
+                            android:id="@+id/txt_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_2"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/txt_3"
+                            android:layout_alignLeft="@id/txt_3"
+                            android:layout_marginTop="10dp"
+                            />
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
